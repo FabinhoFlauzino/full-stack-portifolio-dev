@@ -1,0 +1,82 @@
+#contact {
+  background: url("../images/Background_Contacts.png") no-repeat;
+  background-size: cover;
+  height: 787px;
+  padding: 128px 120px 200px 120px;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 48px;
+
+    .subtitle {
+      color: var(--purple);
+      text-align: center;
+      font-family: Inconsolata;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 120%;
+    }
+
+    p {
+      font-family: "Maven Pro";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 140%;
+      text-align: center;
+    }
+  }
+
+  .links {
+    display: grid;
+    justify-content: center;
+    gap: 16px;
+
+    .link {
+      width: 400px;
+
+      a {
+        border: 1px solid transparent;
+        display: flex;
+        width: 400px;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        border-radius: 8px;
+        background: var(--gray-300);
+
+        color: var(--gray-500);
+        font-family: "Maven Pro";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 140%;
+
+        >div {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+
+        &:hover {
+          border: 1px solid var(--blue);
+
+          svg {
+            path {
+              fill: var(--blue)
+            }
+          }
+        }
+      }
+    }
+  }
+}

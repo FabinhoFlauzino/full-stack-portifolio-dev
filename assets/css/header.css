@@ -1,0 +1,116 @@
+.hero {
+  width: 100%;
+  height: 750px;
+  background-image: url("../images/Background_Intro.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 120px 160px 60px;
+  display: grid;
+  place-content: center;
+  align-items: center;
+
+  .content {
+    max-width: 680px;
+    margin-bottom: 80px;
+    margin-inline: auto;
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      border-radius: 50%;
+      border: 2px solid var(--red);
+      position: relative;
+
+      .image-avatar {
+        width: 95px;
+        height: 95px;
+        border-radius: 50%;
+        display: block;
+      }
+
+      .image-tag {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+
+    .subtitle {
+      font-family: "Inconsolata";
+      font-size: 20px;
+      line-height: 120%;
+      margin-top: 64px;
+
+      span {
+        color: var(--red);
+      }
+    }
+
+    h1 {
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 120%;
+      margin-block: 16px 20px;
+    }
+
+    p {
+      font-family: "Maven Pro";
+      font-size: 14px;
+      line-height: 140%;
+      color: var(--gray-400);
+    }
+  }
+
+  .tags {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    gap: 16px;
+
+    .tag {
+      display: flex;
+      padding: 8px 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--gray-300);
+      border-radius: 999px;
+
+      .html {
+        path {
+          fill: var(--red);
+        }
+      }
+
+      .react,
+      .css {
+        path {
+          fill: var(--blue);
+        }
+      }
+
+      .js {
+        path {
+          fill: var(--yellow);
+        }
+      }
+
+      .node {
+        path {
+          fill: var(--green);
+        }
+      }
+    }
+  }
+
+  .seta {
+    margin-top: 94px;
+    text-align: center;
+  }
+}
